@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      background-color:   hsl(217, 54%, 11%);
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px
+    }
+
+    #card{
+      margin: 150px auto; 
+      width: 350px;
+      height: 600px;
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 15px;
+
+    }
+
+    img{
+      width: 302px;
+      height: 302px;
+      margin: 24px 24px 0px 24px; 
+      border-radius: 10px;
+    }
+
+   img:hover{
+      color: hsl(178, 100%, 50%);
+    }
+
+    #container{
+      margin: 24px;
+    }
+
+    #title{
+      font-size: 22px;
+      font-weight: 600;
+      color: hsl(0, 0%, 100%);
+    }
+
+    #title:hover{
+      color: hsl(178, 100%, 50%);
+    }
+
+    #value{
+      font-size: 16px;
+      font-weight: 400;
+      width: 302px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    #value div{
+      flex: 1;
+    }
+
+    .a1{
+     color: hsl(178, 100%, 50%);
+    }
+
+    .b1{
+      color: hsl(215, 51%, 70%);
+      text-align: end;
+    }
+
+    p{
+      font-weight: 300;
+      color: hsl(215, 51%, 70%);
+    }
+
+    #name:hover{
+      color: hsl(178, 100%, 50%);
+    }
+
+    .icon, .text {
+      vertical-align: middle;
+      display: inline-block;
+    }
+
+    .text{
+      padding-left: 3px;
+    }
+
+    hr{
+      margin-top: 25px;
+      height: 1px;
+      border-width: 0px;
+      background-color: hsl(215, 32%, 27%);
+    }
+  </style>
+</head>
+<body>
+
+    <div id="card">
+      <img id="eth" src="./images/image-equilibrium.jpg" alt="NFT">
+      <div id="container">
+          <div id="title">Equilibrium #3429</div>
+
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+
+          <div id="value">
+            <div class="a1">
+              <svg class="icon" width="11" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z" fill="#00FFF8"/></svg>
+              <div class="text">0.041 ETH</div>
+            </div>
+            <div class="b1"> 
+              <svg class="icon" width="17" height="17" xmlns="http://www.w3.org/2000/svg"><path d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z" fill="#8BACD9"/></svg>
+              <div class="text">3 days left</div>
+            </div>
+          </div>
+          <hr>
+          <p> Creation of <a id="name">Jules Wyvern</a></p>
+    </div>
+    </div>
+</body>
+</html>
+
